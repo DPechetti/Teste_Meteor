@@ -1,0 +1,19 @@
+<body>
+    <div class="container">
+        <header>
+            <h1>Hello World</h1>
+        </header>
+
+        <p>Teste de itens</p>
+
+        <ul>
+            {{#each tasks}}
+                {{> task}}
+            {{/each}}
+        </ul>
+    </div>
+</body>
+
+<template name="task">
+    <li>{{text}}</li>
+</template>
